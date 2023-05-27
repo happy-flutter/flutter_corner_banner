@@ -1,8 +1,8 @@
-# Flutter Banner
+# flutter_corner_banner
 
 [![release](https://github.com/cove1205/Plume/actions/workflows/release.yaml/badge.svg?branch=master)](https://github.com/cove1205/Plume/actions/workflows/release.yaml)
-![Pub Version (including pre-releases)](https://img.shields.io/pub/v/flutter_banner?include_prereleases)
-![GitHub](https://img.shields.io/github/license/happy-flutter/flutter_banner)
+![Pub Version (including pre-releases)](https://img.shields.io/pub/v/flutter_corner_banner?include_prereleases)
+![GitHub](https://img.shields.io/github/license/happy-flutter/flutter_corner_banner)
 
 A widget that build a custom child with banner at the corner contain text or icons.
 
@@ -17,12 +17,12 @@ A widget that build a custom child with banner at the corner contain text or ico
 i. Add the latest version of this package to your pubspec.yaml file, and run: 'dart pub get':
 ```yaml
 dependancies:
-  flutter_banner: ^1.0.0
+  flutter_corner_banner: ^1.0.0
 ```
 
 ii. Import the package in your Flutter App and use it.
 ```dart
-import 'package:flutter_banner/flutter_banner.dart';
+import 'package:flutter_corner_banner/flutter_corner_banner.dart';
 ```
 
 

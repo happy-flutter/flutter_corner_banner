@@ -1,9 +1,9 @@
-name: flutter_banner
+name: flutter_corner_banner
 description: A widget that build a custom child with banner at the corner contain text or icons.
 version: 1.0.0
-homepage: https://github.com/happy-flutter/flutter_banner
-repository: https://github.com/happy-flutter/flutter_banner
-issue_tracker: https://github.com/happy-flutter/flutter_banner/issues
+homepage: https://github.com/happy-flutter/flutter_corner_banner
+repository: https://github.com/happy-flutter/flutter_corner_banner
+issue_tracker: https://github.com/happy-flutter/flutter_corner_banner/issues
 
 environment:
   sdk: ">=2.18.0 <4.0.0"
