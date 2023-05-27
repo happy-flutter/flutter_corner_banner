@@ -29,7 +29,7 @@ class DemoView extends StatelessWidget {
         title: const Text("Corner Banner"),
       ),
       body: Center(
-        child: BannerWidget(
+        child: CornerBanner(
           showBanner: true,
           bannerPosition: BannerPosition.topRight,
           bannerText: 'Banner',

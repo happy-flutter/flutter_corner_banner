@@ -1,0 +1,33 @@
+# .github/workflows/publish.yml
+name: Publish to pub.dev
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+*" # tag-pattern on pub.dev: 'v'
+
+jobs:
+  publishing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: dry run
+        uses: k-paxian/dart-package-publisher@master
+        with:
+          flutter: true
+          skipTests: true
+          dryRunOnly: true
+          accessToken: ${{ secrets.GITHUB_TOKEN }}
+          refreshToken: ${{ secrets.GITHUB_TOKEN }}
+          credentialJson: ${{ secrets.PUB_CREDENTIAL_JSON }}
+
+      - name: Publish package
+        uses: k-paxian/dart-package-publisher@master
+        with:
+          flutter: true
+          skipTests: true
+          accessToken: ${{ secrets.GITHUB_TOKEN }}
+          refreshToken: ${{ secrets.GITHUB_TOKEN }}
+          credentialJson: ${{ secrets.PUB_CREDENTIAL_JSON }}

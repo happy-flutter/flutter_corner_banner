@@ -10,7 +10,7 @@ const double _minBannerSize = 40;
 const double _rotateAngle = math.pi / 4;
 
 /// Widget to show a banner whith any child widget.
-class BannerWidget extends StatelessWidget {
+class CornerBanner extends StatelessWidget {
   ///Show Banner Or Not
   final bool showBanner;
 
@@ -56,7 +56,7 @@ class BannerWidget extends StatelessWidget {
   ///
   ///Otherwise height & width must be given or it will take all the available space it get.
   ///
-  const BannerWidget({
+  const CornerBanner({
     Key? key,
     this.showBanner = true,
     this.bannerPosition = BannerPosition.topRight,
