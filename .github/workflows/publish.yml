@@ -13,16 +13,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: dry run
-        uses: k-paxian/dart-package-publisher@master
-        with:
-          flutter: true
-          skipTests: true
-          dryRunOnly: true
-          accessToken: ${{ secrets.GITHUB_TOKEN }}
-          refreshToken: ${{ secrets.GITHUB_TOKEN }}
-          credentialJson: ${{ secrets.PUB_CREDENTIAL_JSON }}
-
       - name: Publish package
         uses: k-paxian/dart-package-publisher@master
         with:
